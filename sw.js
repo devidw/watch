@@ -3,6 +3,8 @@ chrome.runtime.onInstalled.addListener(() => {
     id: "watch",
     title: "Watch",
     contexts: ["link"],
+    documentUrlPatterns: ["https://*.imdb.com/*"],
+    targetUrlPatterns: ["https://*.imdb.com/*"],
   })
 })
 
